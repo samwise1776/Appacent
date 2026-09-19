@@ -8,7 +8,12 @@ const starterApps = [
   { id: "focus-flow", name: "Focus Flow", category: "Productivity", description: "Turn a noisy to-do list into one small, satisfying next step.", repo: "samwise1776/focus-flow", color: "#70dbc0", glyph: "→" },
   { id: "json-garden", name: "JSON Garden", category: "Developer tools", description: "Explore, format, and understand JSON without leaving your browser.", repo: "samwise1776/json-garden", color: "#c3adff", glyph: "{}" },
   { id: "palette-party", name: "Palette Party", category: "Design", description: "Make color palettes that feel right and export them anywhere.", repo: "samwise1776/palette-party", color: "#f08b70", glyph: "◈" },
-  { id: "tiny-timer", name: "Tiny Timer", category: "Utilities", description: "A minimal timer for cooking, studying, pairing, and everything between.", repo: "samwise1776/tiny-timer", color: "#9be37a", glyph: "◴" }
+  { id: "tiny-timer", name: "Tiny Timer", category: "Utilities", description: "A minimal timer for cooking, studying, pairing, and everything between.", repo: "samwise1776/tiny-timer", color: "#9be37a", glyph: "◴" },
+  { id: "velice", name: "Velice", category: "Developer tools", description: "A public software project maintained by samwise1776.", repo: "samwise1776/velice", color: "#f2a65a", glyph: "V" },
+  { id: "fortran-omni", name: "FortranOmni", category: "Utilities", description: "Open-source Linux desktop utilities built with GTK 4 and GJS.", repo: "samwise1776/FortranOmni", color: "#8bd3dd", glyph: "F" },
+  { id: "desktopcraft", name: "DesktopCraft", category: "Utilities", description: "A creative desktop project for crafting a more personal workspace.", repo: "samwise1776/desktopcraft", color: "#c3adff", glyph: "D" },
+  { id: "lumi", name: "Lumi", category: "Developer tools", description: "A small programming language written in Java with simple GUI support.", repo: "samwise1776/Lumi", color: "#ffe066", glyph: "L" },
+  { id: "db", name: "DB", category: "Developer tools", description: "A Java project from the Appacent repository collection.", repo: "samwise1776/DB", color: "#70dbc0", glyph: "DB" }
 ];
 
 const storageKey = "appacent-state-v1";
