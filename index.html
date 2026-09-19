@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta
+      name="description"
+      content="Appacent is a simple app center for discovering, downloading, and tracking GitHub projects."
+    />
+    <title>Appacent · Your app center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#catalog" aria-label="Appacent home">
+        <span class="brand-mark">A</span>
+        <span>appacent<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="nav-link active" href="#catalog" data-view="catalog">Explore</a>
+        <a class="nav-link" href="#tracked" data-view="tracked">Tracked repos <span id="tracked-count" class="nav-count">0</span></a>
+        <a class="nav-link" href="#create" data-view="create">Create an app</a>
+      </nav>
+      <div class="header-stat">
+        <span class="status-dot"></span>
+        <span><strong id="header-downloads">0</strong> total downloads</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> The open app shelf</p>
+          <h1>Good apps.<br /><em>One place.</em></h1>
+          <p class="hero-lede">
+            Discover useful tools from GitHub, keep an eye on what people are downloading,
+            and publish your own project in a few clicks.
+          </p>
+          <a class="button button-primary" href="#catalog">Browse the collection <span>↗</span></a>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-card hero-card-top"><span class="mini-icon orange">✦</span><span>curated tools</span></div>
+          <div class="hero-card hero-card-bottom"><span class="mini-icon blue">↓</span><span>live download counts</span></div>
+          <div class="hero-center">A<span>+</span></div>
+        </div>
+      </section>
+
+      <section id="catalog" class="content-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Collection</p>
+            <h2>Find your next favorite.</h2>
+          </div>
+          <div class="collection-controls">
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input id="search-input" type="search" placeholder="Search apps or repos…" />
+            </label>
+            <select id="category-filter" aria-label="Filter by category">
+              <option value="all">All categories</option>
+            </select>
+          </div>
+        </div>
+        <div id="app-grid" class="app-grid" aria-live="polite"></div>
+        <p id="empty-state" class="empty-state" hidden>No apps match that search yet.</p>
+      </section>
+
+      <section id="tracked" class="content-section tracked-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / Signal</p>
+            <h2>Repos with momentum.</h2>
+          </div>
+          <p class="section-note">Only projects with at least one download appear here.</p>
+        </div>
+        <div id="tracked-list" class="tracked-list"></div>
+        <div id="tracked-empty" class="tracked-empty">
+          <span class="empty-icon">↗</span>
+          <h3>Your tracked repos will show up here.</h3>
+          <p>Download an app above and its repository will be added to your live signal list.</p>
+          <a href="#catalog" class="text-link">Explore apps <span>→</span></a>
+        </div>
+      </section>
+
+      <section id="create" class="content-section create-section">
+        <div class="create-intro">
+          <p class="eyebrow">03 / Publish</p>
+          <h2>Build the shelf<br /><em>you want.</em></h2>
+          <p>Add a project to this app center. It is saved in this browser so you can prototype your own catalog without a backend.</p>
+          <div class="creator-tip"><span>✦</span> Tip: use a public GitHub repository URL so people can inspect your source.</div>
+        </div>
+        <form id="create-form" class="create-form">
+          <div class="form-heading"><span>New listing</span><span class="mono">APP-<span id="next-id">001</span></span></div>
+          <label>App name<input name="name" required maxlength="42" placeholder="e.g. Focus Garden" /></label>
+          <label>Short description<textarea name="description" required maxlength="120" rows="2" placeholder="What makes this app useful?"></textarea></label>
+          <div class="form-row">
+            <label>Category<select name="category" required>
+              <option value="Productivity">Productivity</option>
+              <option value="Developer tools">Developer tools</option>
+              <option value="Design">Design</option>
+              <option value="Utilities">Utilities</option>
+              <option value="Learning">Learning</option>
+            </select></label>
+            <label>Accent color<input name="color" type="color" value="#ff7b54" /></label>
+          </div>
+          <label>GitHub repository URL<input name="repo" type="url" required placeholder="https://github.com/you/project" /></label>
+          <button class="button button-primary" type="submit">Add to Appacent <span>↗</span></button>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#catalog"><span class="brand-mark">A</span><span>appacent<span class="brand-dot">.</span></span></a>
+      <p>Open-source projects, thoughtfully collected.</p>
+      <span class="mono">© 2025 / github pages</span>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
