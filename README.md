@@ -1,6 +1,6 @@
 # Appacent
 
-Appacent is a dependency-free app center designed for GitHub Pages. It includes a curated catalog, sample apps and repositories to experiment with, download counters, a repository signal view, and a browser-local app creator.
+Appacent is a dependency-free app center designed for GitHub Pages. It includes ten real repositories from `samwise1776`, download counters, a repository signal view, and a browser-local app creator.
 
 ## Run it
 
