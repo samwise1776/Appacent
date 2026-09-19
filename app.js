@@ -1,14 +1,14 @@
 const starterApps = [
-  { id: "velice", name: "Velice", category: "Developer tools", description: "A public software project maintained by samwise1776.", repo: "samwise1776/velice", color: "#f2a65a", glyph: "V" },
-  { id: "fortran-omni", name: "FortranOmni", category: "Utilities", description: "Open-source Linux desktop utilities built with GTK 4 and GJS.", repo: "samwise1776/FortranOmni", color: "#8bd3dd", glyph: "F" },
-  { id: "db", name: "DB", category: "Developer tools", description: "A Java project from the Appacent repository collection.", repo: "samwise1776/DB", color: "#70dbc0", glyph: "DB" },
-  { id: "desktopcraft", name: "DesktopCraft", category: "Utilities", description: "A creative desktop project for crafting a more personal workspace.", repo: "samwise1776/desktopcraft", color: "#c3adff", glyph: "D" },
-  { id: "desktop-pet", name: "DesktopPet", category: "Utilities", description: "A Java desktop companion project from the Appacent collection.", repo: "samwise1776/DesktopPet", color: "#ff9dba", glyph: "P" },
-  { id: "todont", name: "Todon't", category: "Productivity", description: "Todon't by Zeptotech: a different way to think about tasks.", repo: "samwise1776/Todont", color: "#ff7b54", glyph: "T" },
-  { id: "lumi", name: "Lumi", category: "Developer tools", description: "A small programming language written in Java with simple GUI support.", repo: "samwise1776/Lumi", color: "#ffe066", glyph: "L" },
-  { id: "omni-desk", name: "OmniDesk", category: "Utilities", description: "A public desktop software project maintained by samwise1776.", repo: "samwise1776/OmniDesk", color: "#82a9ff", glyph: "O" },
-  { id: "searchpot", name: "Searchpot", category: "Utilities", description: "A lightweight web project for finding what you need faster.", repo: "samwise1776/Searchpot", color: "#b8e986", glyph: "S" },
-  { id: "app-creator", name: "App Creator", category: "Developer tools", description: "A JavaScript project for creating and exploring apps.", repo: "samwise1776/app-creator", color: "#d59bf6", glyph: "A" }
+  { id: "orbital", name: "Orbital", category: "Productivity", description: "A calm command center for your tasks, notes, and everyday orbit.", repo: "samwise1776/orbital", color: "#ff7b54", glyph: "◎" },
+  { id: "pixel-kit", name: "Pixel Kit", category: "Design", description: "Tiny image utilities for quick edits, crops, and beautiful exports.", repo: "samwise1776/pixel-kit", color: "#82a9ff", glyph: "▦" },
+  { id: "branchline", name: "Branchline", category: "Developer tools", description: "See your Git branches clearly and keep your next commit in sight.", repo: "samwise1776/branchline", color: "#b8e986", glyph: "⑂" },
+  { id: "daymark", name: "Daymark", category: "Productivity", description: "A focused daily planner that makes room for the work that matters.", repo: "samwise1776/daymark", color: "#d59bf6", glyph: "◷" },
+  { id: "weatherly", name: "Weatherly", category: "Utilities", description: "A friendly, glanceable forecast for wherever the day takes you.", repo: "samwise1776/weatherly", color: "#f6cf65", glyph: "☼" },
+  { id: "readwise-lite", name: "Readwise Lite", category: "Learning", description: "Keep the best ideas from what you read close at hand.", repo: "samwise1776/readwise-lite", color: "#ff9dba", glyph: "▤" },
+  { id: "focus-flow", name: "Focus Flow", category: "Productivity", description: "Turn a noisy to-do list into one small, satisfying next step.", repo: "samwise1776/focus-flow", color: "#70dbc0", glyph: "→" },
+  { id: "json-garden", name: "JSON Garden", category: "Developer tools", description: "Explore, format, and understand JSON without leaving your browser.", repo: "samwise1776/json-garden", color: "#c3adff", glyph: "{}" },
+  { id: "palette-party", name: "Palette Party", category: "Design", description: "Make color palettes that feel right and export them anywhere.", repo: "samwise1776/palette-party", color: "#f08b70", glyph: "◈" },
+  { id: "tiny-timer", name: "Tiny Timer", category: "Utilities", description: "A minimal timer for cooking, studying, pairing, and everything between.", repo: "samwise1776/tiny-timer", color: "#9be37a", glyph: "◴" }
 ];
 
 const storageKey = "appacent-state-v1";
